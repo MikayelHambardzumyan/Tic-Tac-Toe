@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: 30px 30px;
+}
+
+.header{
+    margin: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board {
+    width: 360px;
+    height: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    outline: 3px solid #000;
+}
+.field {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content:inherit;
+    align-content: inherit;
+    flex-direction: row;
+    width: 360px;
+
+}
+.new-game {
+    border: none;
+    color: #fff;
+    background: green;
+    padding: 10px 16px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.res {
+    color: green;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Arial;
+    height: 50px;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    cursor: not-allowed;
+}
+.cross {
+    width: 100%;
+    height: 100%;
+    cursor: not-allowed;
+}
+
+.plImg{
+    width: 120px;
+    height: 120px;
+}
+
+.spans{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.playerOscore, .playerXscore{
+    display: flex;
+    box-sizing: border-box;
+    border: 3px solid #000;
+    width: 100px;
+    justify-content: center;
+    font-style: normal;
+    font-size: 50px;
+    
+    
+}
